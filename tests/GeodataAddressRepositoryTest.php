@@ -1,11 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: eddypouw
- * Date: 08/05/2017
- * Time: 19:41
- */
-
+declare(strict_types=1);
 namespace Eddypouw\GeodataPostalApi;
 
 use GuzzleHttp\ClientInterface;

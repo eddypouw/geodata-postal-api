@@ -17,6 +17,11 @@ class GeodataAddressRepository
         $this->client = $client;
     }
 
+    /**
+     * @param string $postal_code
+     * @param int|null $house_number
+     * @return GeodataAddress|null
+     */
     public function findByPostal(string $postal_code, int $house_number = null)
     {
         if (!$this->isPostalCorrect($postal_code)) {
@@ -36,6 +41,10 @@ class GeodataAddressRepository
         return (boolean)preg_match('~^[0-9]{4}[a-zA-Z]{2}$~', $postal_code);
     }
 
+    /**
+     * @param ResponseInterface $response
+     * @return GeodataAddress|null
+     */
     private function createAddressFromResponse(ResponseInterface $response)
     {
         $contents    = $response->getBody()->getContents();

@@ -8,22 +8,27 @@ class GeodataAddress
      * @var string
      */
     private $province;
+
     /**
      * @var string
      */
     private $municipality;
+
     /**
      * @var string
      */
     private $city;
+
     /**
      * @var string
      */
     private $street;
+
     /**
      * @var string
      */
     private $postal_code;
+
     /**
      * @var int|null
      */

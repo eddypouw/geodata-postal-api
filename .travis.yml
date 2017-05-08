@@ -3,15 +3,15 @@ language: php
 sudo: false
 
 cache:
-  directories:
-    - "$HOME/.composer/cache"
+    directories:
+        - "$HOME/.composer/cache"
 
 php:
-  - '7.0'
-  - '7.1'
-  - nightly
+    - '7.0'
+    - '7.1'
+    - nightly
 
 install:
-  - composer update --prefer-stable --prefer-dist
+    - composer update --prefer-stable --prefer-dist
 
 script: vendor/bin/phpunit  --coverage-text

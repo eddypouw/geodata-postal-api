@@ -3,6 +3,8 @@ PHP client to find Dutch addresses based on postal code and house number.
 
 This library is based on the open geodata from [https://nationaalgeoregister.nl](https://nationaalgeoregister.nl).
 
+[![Build Status](https://travis-ci.org/eddypouw/geodata-postal-api.svg?branch=master)](https://travis-ci.org/eddypouw/geodata-postal-api)
+
 Usage
 -----
 Install the latest version via [composer](https://getcomposer.org/):

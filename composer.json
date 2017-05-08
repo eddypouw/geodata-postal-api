@@ -1,0 +1,29 @@
+{
+    "name": "eddypouw/geodata-postal-api",
+    "description": "Geodata postal API to find Dutch addresses",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Eddy Pouw",
+            "email": "eddypouw@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^7.0",
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Eddypouw\\GeodataPostalApi\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Eddypouw\\GeodataPostalApi\\": "tests/"
+        }
+    }
+}
